@@ -1,0 +1,35 @@
+:root {
+  --bg: #f4ecd8;
+  --fg: #3b2f1d;
+  --accent: #7a4b2f;
+  --control-bg: #f9f3e5;
+  --border: rgba(60,40,20,0.2);
+}
+
+html, body, main, section, article, header, footer, nav, aside {
+  background-color: var(--bg) !important;
+  color: var(--fg) !important;
+}
+
+p, span, li, h1, h2, h3, h4, h5, h6 { color: var(--fg) !important; }
+
+a { color: var(--accent) !important; }
+a:hover { text-decoration-color: rgba(122,75,47,0.4) !important; }
+
+input, textarea, select, button {
+  background-color: var(--control-bg) !important;
+  color: var(--fg) !important;
+  border: 1px solid var(--border) !important;
+}
+
+img, svg, video, canvas, iframe { background: transparent !important; border: none !important; }
+
+pre, code { background: #ede2c9 !important; color: #2b2015 !important; border: 1px solid var(--border) !important; }
+
+table { border-color: var(--border) !important; }
+th, td { background: transparent !important; color: var(--fg) !important; }
+
+::placeholder { color: rgba(59,47,29,0.55) !important; }
+::selection { background: rgba(122,75,47,0.25) !important; color: var(--fg) !important; }
+
+:focus { outline: 2px solid var(--accent) !important; outline-offset: 2px !important; }

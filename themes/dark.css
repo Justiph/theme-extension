@@ -1,0 +1,46 @@
+:root {
+  --bg: #121212;
+  --fg: #e0e0e0;
+  --accent: #80b3ff;
+  --control-bg: #1e1e1e;
+  --border: rgba(255,255,255,0.1);
+}
+
+/* Containers */
+html, body, main, section, article, header, footer, nav, aside {
+  background-color: var(--bg) !important;
+  color: var(--fg) !important;
+}
+
+/* Text */
+p, span, li, h1, h2, h3, h4, h5, h6 {
+  color: var(--fg) !important;
+}
+
+/* Links */
+a { color: var(--accent) !important; }
+a:hover { text-decoration-color: rgba(128,179,255,0.5) !important; }
+
+/* Form controls */
+input, textarea, select, button {
+  background-color: var(--control-bg) !important;
+  color: var(--fg) !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* Media untouched */
+img, svg, video, canvas, iframe { background: transparent !important; border: none !important; }
+
+/* Code */
+pre, code { background: #1a1a1a !important; color: #d6d6d6 !important; border: 1px solid var(--border) !important; }
+
+/* Tables */
+table { border-color: var(--border) !important; }
+th, td { background: transparent !important; color: var(--fg) !important; }
+
+/* Placeholder + selection */
+::placeholder { color: rgba(224,224,224,0.55) !important; }
+::selection { background: rgba(128,179,255,0.25) !important; color: var(--fg) !important; }
+
+/* Focus */
+:focus { outline: 2px solid var(--accent) !important; outline-offset: 2px !important; }

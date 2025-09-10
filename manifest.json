@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Theme Switcher Pro",
+  "description": "Switch between multiple themes on any website.",
+  "version": "2.2",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "themes/dark.css",
+        "themes/light.css",
+        "themes/sepia.css",
+        "themes/contrast.css"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

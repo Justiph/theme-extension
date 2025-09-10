@@ -1,0 +1,35 @@
+:root {
+  --bg: #000000;
+  --fg: #ffffff;
+  --accent: #ffff00;
+  --control-bg: #000000;
+  --border: #ffffff;
+}
+
+html, body, main, section, article, header, footer, nav, aside {
+  background-color: var(--bg) !important;
+  color: var(--fg) !important;
+}
+
+p, span, li, h1, h2, h3, h4, h5, h6 { color: var(--fg) !important; }
+
+a { color: var(--accent) !important; font-weight: bold !important; }
+a:hover { text-decoration: underline !important; }
+
+input, textarea, select, button {
+  background-color: var(--control-bg) !important;
+  color: var(--fg) !important;
+  border: 2px solid var(--border) !important;
+}
+
+img, svg, video, canvas, iframe { background: transparent !important; border: none !important; }
+
+pre, code { background: #000 !important; color: #fff !important; border: 2px solid var(--border) !important; }
+
+table { border-color: var(--border) !important; }
+th, td { background: transparent !important; color: var(--fg) !important; border: 1px solid var(--border) !important; }
+
+::placeholder { color: rgba(255,255,255,0.7) !important; }
+::selection { background: var(--accent) !important; color: #000 !important; }
+
+:focus { outline: 3px solid var(--accent) !important; outline-offset: 2px !important; }
